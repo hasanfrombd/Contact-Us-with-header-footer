@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --brand-color-primary: #375aff;
+    --paragraph-color: #454545;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+strong {
+    font-weight: 700;
+}
+.wrapper {
+    padding-bottom: 100px;
+}
+
+.top-section {
+    height: 100vh;
+    color: #fff;
+    background: url(../images/top_bg_img.jpg) 50% 100% no-repeat;
+    background-size: cover;
+}
+
+.top-section .content h1 {
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 1.33em;
+    letter-spacing: -.02em;
+}
+.top-section .content p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6em;
+    letter-spacing: -.04em;
+}
+.wrapper .wrap {
+    width: 90%;
+    padding: 45px 20px;
+    border-bottom: 1px solid #454545;
+    margin: 0 auto;
+    display: flex;
+}
+.wrapper .wrap:last-child {
+    border-bottom: 0;
+}
+
+.title .title-content h2 {
+    /* margin-bottom: 15px; */
+    color: #242424;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.33em;
+    letter-spacing: -.03em;
+}
+.title .title-content h2 span {
+    font-weight: 700;
+    color: var(--brand-color-primary);
+}
+.title p {
+    color: var(--paragraph-color);
+    font-size: 18px;
+    letter-spacing: -.03em;
+    margin-bottom: 0;
+}
+.title p a {
+    color: inherit;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.wrap .heading {
+    padding-left: 50px;
+}
+.wrap .heading h4 {
+    padding-left: 10px;
+    color: #242424;
+    font-size: 20px;
+    line-height: 1.3em;
+    letter-spacing: -.03em;
+}
+
+.wrap .heading h4,
+.wrap .heading-group {
+    width: 90%;
+}
+.agree .heading p {
+    padding-left: 10px;
+}
+.wrap .heading .num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* top: -6px;
+    left: 0; */
+    width: 40px;
+    height: 40px;
+    background: var(--brand-color-primary);
+    border-radius: 50% 0 50% 50%;
+    color: #fff;
+    font-weight: 500;
+    /* text-align: center; */
+}
+
+.wrap .options .option{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+    /* max-width: 700px; */
+}
+.wrap .options .info {
+    gap: 0px 30px;
+}
+
+.options .option .checkbox {
+    min-width: 130px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-top: -.2em;
+}
+.options .option .checkbox input {
+    opacity: 1;
+    margin-right: 8px;
+    z-index: -1;
+}
+.cost .heading .heading-group {
+    margin-right: 20px;
+}
+.wrapper .wrap .heading .heading-group p {
+    padding-left: 10px;
+}
+
+.info {
+    padding: 0 10px;
+}
+.wrap form input,
+form .option input,
+.wrap textarea {
+    padding: 7px 19px;
+    font-size: 17px;
+    letter-spacing: -.03em;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #505050;
+    border: 1px solid #ddd;
+}
+form .option input {
+    height: 50px;
+}
+.wrap form input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.agree-box {
+    padding: 15px 19px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    color: #686868;
+    font-weight: 300;
+    background-color: #fff;
+}
+
+.wrap.submit-area {
+    margin-top: 30px;
+}
+.wrap.submit-area button {
+    display: inline-block;
+    width: 250px;
+    height: 70px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.3em;
+    letter-spacing: -.03em;
+    background: var(--brand-color-primary);
+    border: 0;
+    border-radius: 35px;
+    margin: 0 auto;
+}
+
+/* responsive starts  */
+@media screen and (max-width:575px) {
+    .top-section .content h1 {
+        font-size: 35px;
+        font-weight: 400;
+    }
+}
+@media  screen and (max-width:767px) {
+    .top-section .content h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .top-section .content p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .title .title-content h2 {
+        font-size: 26px;
+    }
+    .wrapper .wrap {
+        flex-direction: column;
+    }
+    .wrapper .wrap .heading,
+    .wrapper .wrap .options {
+        width: 100%;
+    }
+    .wrapper .wrap .options {
+        padding-left: 35px;
+    }
+    .wrapper .wrap .heading {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .wrap .heading h4 {
+        font-size: 18px;
+    }
+    .agree .agree-box {
+        width: 100%;
+    }
+    .wrap .heading .num {
+        height: 25px;
+        width: 25px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:768px) {
+    .top-section .content h1 {
+        font-size: 65px;
+        font-weight: 700;
+    }
+}
+@media screen and (max-width:1023px) {
+    .top-section {
+        height: 60vh;
+        width: 100%;
+    }
+}
+@media screen and (min-width:1024px) {
+    .top-section .content h1 {
+        font-size: 85px;
+        font-weight: 700;
+    }
+}
+
+/* responsive ends  */
